@@ -14,7 +14,7 @@ export function About() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7 }}
         >
-          <HoloCard src="/images/bayu-profile.jpg" alt="Foto profil Bayu" />
+          <HoloCard src="/images/bayu-profile.png" alt="Foto profil Bayu" />
         </motion.div>
 
         <motion.div

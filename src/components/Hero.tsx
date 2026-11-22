@@ -25,7 +25,6 @@ export function Hero() {
           loop
           playsInline
           preload="metadata"
-          poster=""
           aria-hidden="true"
         >
           <source src="/videos/train-background.mp4" type="video/mp4" />
