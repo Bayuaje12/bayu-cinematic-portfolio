@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { HoloCard } from '../components/HoloCard'
 import { useReducedMotion } from '../hooks/useReducedMotion'
 
 export function About() {
@@ -7,22 +6,13 @@ export function About() {
   return (
     <section id="about" className="relative py-24 sm:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(126,182,255,0.08),transparent_35%),radial-gradient(circle_at_80%_70%,rgba(255,255,255,0.04),transparent_30%)]" />
-      <div className="section-shell relative grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="section-shell relative">
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.7 }}
-        >
-          <HoloCard src="/images/bayu-profile.png" alt="Foto profil Bayu" />
-        </motion.div>
-
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="glass rounded-[28px] p-7 sm:p-10"
+          className="glass rounded-[28px] p-7 sm:p-10 lg:p-12 max-w-4xl mx-auto"
         >
           <p className="section-kicker">ABOUT ME</p>
           <h2 className="section-title mt-4 font-[Outfit]">
@@ -31,7 +21,7 @@ export function About() {
           <p className="mt-3 font-[Outfit] text-lg sm:text-xl text-slate-300">
             Developer <span className="text-slate-500">&amp;</span> Creative Technologist
           </p>
-          <div className="mt-8 space-y-5 text-slate-300 leading-relaxed text-base sm:text-lg">
+          <div className="mt-8 space-y-5 text-slate-300 leading-relaxed text-base sm:text-lg max-w-3xl">
             <p>
               Saya memiliki ketertarikan terhadap pengembangan website, teknologi modern, AI Agent, bot development, dan berbagai inovasi digital. Saya senang mempelajari hal baru dan mengubah ide menjadi sesuatu yang nyata.
             </p>
