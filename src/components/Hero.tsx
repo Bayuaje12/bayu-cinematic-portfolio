@@ -18,7 +18,7 @@ export function Hero() {
   const go = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
 
   return (
-    <section ref={ref} id="home" className="relative min-h-[100svh] overflow-x-clip overflow-y-visible flex items-start lg:items-center">
+    <section ref={ref} id="home" className="relative z-20 isolate min-h-[100svh] overflow-x-clip overflow-y-visible flex items-start lg:items-center">
       <motion.div style={{ y }} className="absolute inset-0">
         <video
           className="h-full w-full object-cover object-center"

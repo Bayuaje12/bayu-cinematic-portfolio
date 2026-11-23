@@ -9,7 +9,7 @@ const icons = { tiktok: SiTiktok, instagram: SiInstagram } as const
 export function Contact() {
   const reduce = useReducedMotion()
   return (
-    <section id="contact" className="relative py-24 sm:py-32">
+    <section id="contact" className="relative py-24 sm:py-32 scroll-mt-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(126,182,255,0.08),transparent_35%)]" />
       <div className="section-shell relative">
         <motion.div

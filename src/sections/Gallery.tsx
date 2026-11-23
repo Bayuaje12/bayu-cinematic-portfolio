@@ -73,7 +73,7 @@ export function Gallery() {
   }
 
   return (
-    <section id="photo-album" className="relative py-24 sm:py-32 overflow-hidden">
+    <section id="photo-album" className="relative py-24 sm:py-32 overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(126,182,255,0.06),transparent_35%)]" />
       <div className="section-shell relative">
         <motion.div

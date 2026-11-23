@@ -10,7 +10,7 @@ export function TechStack() {
   const activeCat = techCategories.find((c) => c.id === active) ?? techCategories[0]
 
   return (
-    <section id="tech-stack" className="relative py-24 sm:py-32 overflow-hidden">
+    <section id="tech-stack" className="relative py-24 sm:py-32 overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_10%,rgba(126,182,255,0.08),transparent_30%),radial-gradient(circle_at_20%_80%,rgba(255,255,255,0.03),transparent_25%)]" />
       <div className="section-shell relative">
         <motion.div
