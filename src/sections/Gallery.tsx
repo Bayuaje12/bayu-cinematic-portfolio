@@ -62,7 +62,7 @@ export function Gallery() {
 
   if (!count) {
     return (
-      <section id="photo-album" className="py-24 sm:py-32">
+      <section id="photo-album" className="py-20 sm:py-28 scroll-mt-24">
         <div className="section-shell glass rounded-[28px] p-10 text-center">
           <p className="section-kicker">PHOTO ALBUM</p>
           <h2 className="section-title mt-4 font-[Outfit]">Momen di balik layar.</h2>
@@ -73,7 +73,7 @@ export function Gallery() {
   }
 
   return (
-    <section id="photo-album" className="relative py-24 sm:py-32 overflow-hidden scroll-mt-24">
+    <section id="photo-album" className="relative pt-14 pb-12 sm:pt-20 sm:pb-20 overflow-hidden scroll-mt-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(126,182,255,0.06),transparent_35%)]" />
       <div className="section-shell relative">
         <motion.div

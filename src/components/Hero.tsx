@@ -37,7 +37,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_30%,rgba(0,0,0,0.55)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,6,8,0.62),transparent_35%,transparent_70%,rgba(5,6,8,0.45))]" />
 
-      <motion.div style={{ opacity, y: contentY }} className="relative z-10 section-shell pt-[5.5rem] pb-16 sm:pt-28 sm:pb-20 lg:pt-32 lg:pb-24 select-none [-webkit-user-select:none]">
+      <motion.div style={{ opacity, y: contentY }} className="relative z-10 section-shell pt-[5.5rem] pb-12 sm:pt-28 sm:pb-16 lg:pt-32 lg:pb-20 select-none [-webkit-user-select:none]">
         <div className="grid grid-cols-[1fr_minmax(132px,40%)] sm:grid-cols-[1fr_minmax(180px,38%)] lg:grid-cols-2 gap-x-4 gap-y-4 sm:gap-x-8 sm:gap-y-6 lg:gap-10 items-center">
           <div className="min-w-0 text-left">
             <motion.p
