@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
-import { SiInstagram, SiTiktok } from 'react-icons/si'
+import { SiInstagram, SiTiktok, SiWhatsapp } from 'react-icons/si'
 import { ArrowUpRight } from 'lucide-react'
 import { socialLinks } from '../data/social'
 import { useReducedMotion } from '../hooks/useReducedMotion'
 
-const icons = { tiktok: SiTiktok, instagram: SiInstagram } as const
+const icons = { tiktok: SiTiktok, instagram: SiInstagram, whatsapp: SiWhatsapp } as const
 
 export function Contact() {
   const reduce = useReducedMotion()
@@ -25,7 +25,7 @@ export function Contact() {
             Have an idea, collaboration, or something interesting to build? Let&apos;s connect.
           </p>
 
-          <div className="mt-10 grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {socialLinks.map((link) => {
               const Icon = icons[link.id]
               return (
